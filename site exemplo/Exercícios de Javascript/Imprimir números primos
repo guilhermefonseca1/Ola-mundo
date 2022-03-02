@@ -1,0 +1,14 @@
+function imprimirPrimos(intervalo) {
+  var vazio = [];
+for(var numero = 2; numero <= intervalo; numero++) {
+  if(numero % numero === 0 && numero % 1 === 0) {
+   var ehPrimo = true;}
+ for(var divisor = 2; divisor < numero; divisor++) {
+   if(numero % divisor === 0) {
+   ehPrimo = false;}
+  } if(ehPrimo) 
+   vazio.push(numero);
+ } return vazio;
+} console.log(imprimirPrimos(20))
+
+
